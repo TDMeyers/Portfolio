@@ -90,94 +90,93 @@ export default function App() {
         <Container sx={{ py: 8 }} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
-              <Grid item xs={12} sm={6} md={4}>
-                <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
-                >
-                  <CardMedia
-                    component="div"
-                    sx={{
-                      // 16:9
-                      pt: '56.25%',
-                    }}
-                    image="https://placekitten.com/262/147"
-                  />
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Browser Game
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe the
-                      content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small">Visit</Button>
-                    <Button size="small">Edit</Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-              <Grid item xs={12} sm={6} md={4}>
-                <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
-                >
-                  <CardMedia
-                    component="div"
-                    sx={{
-                      // 16:9
-                      pt: '56.25%',
-                    }}
-                    image="https://placekitten.com/261/147"
-                  />
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      D&D Compendium
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe the
-                      content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small">Visit</Button>
-                    <Button size="small">Edit</Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-              <Grid item xs={12} sm={6} md={4}>
-                <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
-                >
-                  <CardMedia
-                    component="div"
-                    sx={{
-                      // 16:9
-                      pt: '56.25%',
-                    }}
-                    image="https://placekitten.com/263/147"
-                  />
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Cat-A-Base
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe the
-                      content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small">Visit</Button>
-                    <Button size="small">Edit</Button>
-                  </CardActions>
-                </Card>
-              </Grid>
+            <Grid item xs={12} sm={6} md={4}>
+              <Card
+                sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+              >
+                <CardMedia
+                  component="div"
+                  sx={{
+                    // 16:9
+                    pt: '56.25%',
+                  }}
+                  image="https://placekitten.com/262/147"
+                />
+                <CardContent sx={{ flexGrow: 1 }}>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Browser Game
+                  </Typography>
+                  <Typography>
+                    HTML, CSS, and JavaScript brower game built up from scratch. No frameworks or libraries used. Focused on responsive design and maintaining feel across devices.
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button size="small" href='https://github.com/TDMeyers/TDMeyers.github.io'>Visit</Button>
+                  <Button size="small">Edit</Button>
+                </CardActions>
+              </Card>
+            </Grid>
+            <Grid item xs={12} sm={6} md={4}>
+              <Card
+                sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+              >
+                <CardMedia
+                  component="div"
+                  sx={{
+                    // 16:9
+                    pt: '56.25%',
+                  }}
+                  image="https://placekitten.com/261/147"
+                />
+                <CardContent sx={{ flexGrow: 1 }}>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    D&D Compendium
+                  </Typography>
+                  <Typography>
+                    Given that there are a few very solid API&apos;s available for D&D, I decided to make an encyclopedia type website to display the available information. I picked this format to challenge myself to utilize many of the features available with React. Including and focused on Router and Redux. This website will also be a good chance to expand my CSS styling capabilities. I will be learning how to create pop-up lists and display cards for multiple elements.
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button size="small" href='https://github.com/TDMeyers/Mod-2---DnD-Compendium'>Visit</Button>
+                  <Button size="small">Edit</Button>
+                </CardActions>
+              </Card>
+            </Grid>
+            <Grid item xs={12} sm={6} md={4}>
+              <Card
+                sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+              >
+                <CardMedia
+                  component="div"
+                  sx={{
+                    // 16:9
+                    pt: '56.25%',
+                  }}
+                  image="https://placekitten.com/263/147"
+                />
+                <CardContent sx={{ flexGrow: 1 }}>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Cat-A-Base
+                  </Typography>
+                  <Typography>
+                    A MERN stack based website focused on cats, cats, cats. It is connected with The Cats Api to import a variety of pictures and lots of information about various breeds.
+                    The goal with development was to have a suitably comprehensive database of information that users could look through. Users can make an account and save favorites to their profile to view later.
+                    An extended goal is to future utilize the MERN stack and allow for multiple-user interaction by allowing for comments to be tagged by both user, location, and breed.
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button size="small" href='https://github.com/TDMeyers/Mod-3---Catabase'>Visit</Button>
+                  <Button size="small">Edit</Button>
+                </CardActions>
+              </Card>
+            </Grid>
           </Grid>
         </Container>
       </main>
       {/* Footer */}
       <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
         <Typography variant="h6" align="center" gutterBottom>
-          Footer
+          Mysterious Links to Eclectic Places
         </Typography>
         <Typography
           variant="subtitle1"
