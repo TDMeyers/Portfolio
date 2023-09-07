@@ -20,7 +20,7 @@ function Copyright() {
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
-        Your Website
+        Dylan Meyers Portfolio
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
