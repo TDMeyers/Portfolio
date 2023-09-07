@@ -14,7 +14,9 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
+import { green } from '@mui/material/colors';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Paper } from '@mui/material';
 
 function Copyright() {
   return (
@@ -32,6 +34,9 @@ function Copyright() {
 const darkTheme = createTheme({
   palette: {
     mode: 'dark',
+    primary: {
+      main: green[500],
+    },
   },
 });
 
@@ -67,24 +72,27 @@ export default function App() {
             >
               Simplicity with Purpose
             </Typography>
-            <Typography variant="h5" align="justify" color="text.secondary" paragraph>
-              Hey, I&apos;m a software engineer and web developer who&apos;s about building solutions that really make a difference. My main focus is is full-stack web development based on JavaScript. I&apos;m really good at tackling tough problems and getting them solved, and I love picking up new skills and technologies.
-              < br />
-              What really gets me excited is working with a team of people who are passionate about what they do and are committed to making a difference in the world. I&apos;m looking for a team that&apos;s focused on building something that matters, and I&apos;d love to be a part of it.
-              < br />
-              In my spare time, I also want to be able to work on contributions to Free and Open Source Software (FOSS) projects. I&apos;m a big believer in the power of FOSS to make the world a better place, and I want to be a part of that.
+            <Paper elevation={2} sx={{ p: 2, mb: 2 }}>
+              <Typography variant="h5" align="justify" color="text.secondary" paragraph>
+                Hey, I&apos;m a software engineer and web developer who&apos;s about building solutions that really make a difference. My main focus is is full-stack web development based on JavaScript. I&apos;m really good at tackling tough problems and getting them solved, and I love picking up new skills and technologies.
+                < br />
+                What really gets me excited is working with a team of people who are passionate about what they do and are committed to making a difference in the world. I&apos;m looking for a team that&apos;s focused on building something that matters, and I&apos;d love to be a part of it.
+                < br />
+                In my spare time, I also want to be able to work on contributions to Free and Open Source Software (FOSS) projects. I&apos;m a big believer in the power of FOSS to make the world a better place, and I want to be a part of that.
 
-              Also, cats.
-            </Typography>
-            <Stack
-              sx={{ pt: 4 }}
-              direction="row"
-              spacing={2}
-              justifyContent="center"
-            >
-              <Button variant="contained">Download my CV</Button>
-              <Button variant="outlined">Get in touch</Button>
-            </Stack>
+                Also, cats.
+              </Typography>
+
+              <Stack
+                sx={{ pt: 4 }}
+                direction="row"
+                spacing={2}
+                justifyContent="center"
+              >
+                <a href='/src/assets/T. Dylan Meyers Resume.pdf' download ><Button variant="contained" >Download my CV</Button></a>
+                <Button variant="outlined" href='https://www.linkedin.com/in/tdylanmeyers/'>Get in touch</Button>
+              </Stack>
+            </Paper>
           </Container>
         </Box>
         <Container sx={{ py: 8 }} maxWidth="md">
@@ -160,7 +168,7 @@ export default function App() {
                   </Typography>
                   <Typography>
                     A MERN stack based website focused on cats, cats, cats. It is connected with The Cats Api to import a variety of pictures and lots of information about various breeds.
-                    The goal with development was to have a suitably comprehensive database of information that users could look through. Users can make an account and save favorites to their profile to view later.
+                    Users can make an account and save favorites to their profile to view later.
                     An extended goal is to future utilize the MERN stack and allow for multiple-user interaction by allowing for comments to be tagged by both user, location, and breed.
                   </Typography>
                 </CardContent>
