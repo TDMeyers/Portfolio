@@ -14,6 +14,9 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import SchoolIcon from '@mui/icons-material/School';
 import { green } from '@mui/material/colors';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Paper } from '@mui/material';
@@ -54,7 +57,6 @@ export default function App() {
         </Toolbar>
       </AppBar>
       <main>
-        {/* Hero unit */}
         <Box
           sx={{
             bgcolor: 'background.paper',
@@ -120,7 +122,6 @@ export default function App() {
                 </CardContent>
                 <CardActions>
                   <Button size="small" href='https://github.com/TDMeyers/TDMeyers.github.io'>Visit</Button>
-                  <Button size="small">Edit</Button>
                 </CardActions>
               </Card>
             </Grid>
@@ -146,7 +147,6 @@ export default function App() {
                 </CardContent>
                 <CardActions>
                   <Button size="small" href='https://github.com/TDMeyers/Mod-2---DnD-Compendium'>Visit</Button>
-                  <Button size="small">Edit</Button>
                 </CardActions>
               </Card>
             </Grid>
@@ -174,7 +174,6 @@ export default function App() {
                 </CardContent>
                 <CardActions>
                   <Button size="small" href='https://github.com/TDMeyers/Mod-3---Catabase'>Visit</Button>
-                  <Button size="small">Edit</Button>
                 </CardActions>
               </Card>
             </Grid>
@@ -192,7 +191,7 @@ export default function App() {
           color="text.secondary"
           component="p"
         >
-          Mysterious Links to Eclectic Places
+          <a href='https://www.linkedin.com/in/tdylanmeyers/'> <LinkedInIcon /></a> <a href='https://github.com/TDMeyers'><GitHubIcon /></a> <a href='https://www.activatework.org/'><SchoolIcon /></a>
         </Typography>
         <Copyright />
       </Box>
